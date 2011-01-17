@@ -13,13 +13,20 @@
 			<h5>Figuring out your life for you, so you don't have to...</h5>	
 		</div>
 		<div class="nav">
-			<span class="button" id="home" onmouseover="javascript:show_tooltip('home')" onmouseout="javascript:hide_tooltip()">Home</span>
-			<span class="button" id="interests" onmouseover="javascript:show_tooltip('interests')" onmouseout="javascript:hide_tooltip()">Interests</span>
-			<span class="button" id="health" onmouseover="javascript:show_tooltip('health')" onmouseout="javascript:hide_tooltip()">Health</span>
-			<span class="button" id="academic" onmouseover="javascript:show_tooltip('academic')" onmouseout="javascript:hide_tooltip()">Academic</span>
-			<span class="button" id="professional" onmouseover="javascript:show_tooltip('professional')" onmouseout="javascript:hide_tooltip()">Professional</span>
-			<span class="button" id="fun" onmouseover="javascript:show_tooltip('fun')" onmouseout="javascript:hide_tooltip()">Fun</span>
-			<span class="button" id="evil" onmouseover="javascript:show_tooltip('evil')" onmouseout="javascript:hide_tooltip()">Evil</span>
+			<span class="button" id="home" onmouseover="javascript:ShowContent('home_disp')" onmouseout="javascript:HideContent('home_disp')">Home</span>
+			<div class="hover_disp" id="home_disp">This is where you live.</div>
+			<span class="button" id="interests" onmouseover="javascript:ShowContent('interests_disp')" onmouseout="javascript:HideContent('interests_disp')">Interests</span>
+			<div class="hover_disp" id="interests_disp">This is what you enjoy.</div>
+			<span class="button" id="health" onmouseover="javascript:ShowContent('health_disp')" onmouseout="javascript:HideContent('health_disp')">Health</span>
+			<div class="hover_disp" id="health_disp">Yippee, this is how you feel. Physically.</div>
+			<span class="button" id="academic" onmouseover="javascript:ShowContent('academic_disp')" onmouseout="javascript:HideContent('academic_disp')">Academic</span>
+			<div class="hover_disp" id="academic_disp">How smart you are.</div>
+			<span class="button" id="professional" onmouseover="javascript:ShowContent('professional_disp')" onmouseout="javascript:HideContent('professional_disp')">Professional</span>
+			<div class="hover_disp" id="professional_disp">How badass you are.</div>
+			<span class="button" id="fun" onmouseover="javascript:ShowContent('fun_disp')" onmouseout="javascript:HideContent('fun_disp')">Fun</span>
+			<div class="hover_disp" id="fun_disp">Where you party.</div>
+			<span class="button" id="evil" onmouseover="javascript:ShowContent('evil_disp')" onmouseout="javascript:HideContent('evil_disp')">Evil</span>
+			<div class="hover_disp" id="evil_disp">Where you party way too hard.</div>
 		</div>
 		<div class="body">
 			<div class="left-column">

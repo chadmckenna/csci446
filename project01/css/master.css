@@ -44,6 +44,24 @@ body {
 			.container .nav .button:hover {
 				background: #6fc;
 			}
+			
+			.container .nav .hover_disp {
+				display:none; 
+				font-style: italic;
+				width: 200px;
+				position:absolute; 
+				border: thin solid #999; 
+				background-color: #fff; 
+				padding: 5px;
+				
+				-moz-box-shadow: 2px 2px 2px #333;
+				-webkit-box-shadow: 2px 2px 2px #333;
+				box-shadow: 2px 2px 2px #333;
+				/* For IE 8 */
+				-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#333333')";
+				/* For IE 5.5 - 7 */
+				filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#333333');
+			}
 		
 		.container .body {
 			background: #fff;
