@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+
+html {
+	background: #aaa;
+	margin: 0 0 0 0;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0 0 0 0;
+}
+
+	.container {
+		margin: 0 auto 0 auto;
+		width: 900px;
+		border: solid thin #000;
+	}
+	
+		.container .header {
+			background: #ccc;
+			padding: 10px;
+		}
+			.container .header h1 {
+				margin: 0 0 0 0;
+				padding: 0 0 0 0;
+			}
+			
+			.container .header h5 {
+				margin: 0 0 0 0;
+				padding: 0 0 0 0;
+				font-weight: normal;
+				color: #666;
+			}
+		
+		.container .nav {
+			background: #000;
+			padding: 10px 0 10px 0;
+		}
+		
+			.container .nav .button {
+				padding: 10px;
+				color: #fff;
+			}
+			.container .nav .button:hover {
+				background: #6fc;
+			}
+		
+		.container .body {
+			background: #fff;
+			min-height: 170px;
+			padding: 10px;
+		}
+			.container .body .left-column {
+				float: left;
+				width: 530px; 
+			}
+				.container .body .left-column h2 {
+					padding: 0 0 0 0;
+					margin: 0 0 0 0;
+				}
+				
+				.container .body .left-column table {
+					width: 510px;
+				}
+					.container .body .left-column table td {
+						padding: 5px 0 5px 0;
+					}
+			
+			.container .body .right-column {
+				float: right;
+				width: 320px;
+				background: #F0F0FF;
+				padding: 5px;
+			}
+				.container .body .right-column h3 {
+					margin: 0 0 0 0;
+					padding: 0 0 0 0;
+				}
+		
+		.container .footer {
+			background: #F0F0F0;
+			padding: 5px;
+			font-size: .75em;
+		}
