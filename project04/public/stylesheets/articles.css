@@ -1,0 +1,42 @@
+.title {
+	padding: 5px;
+	text-align: center;
+}
+	.title h1 {
+		font-size: 4em;
+	}
+.create-article {
+	padding: 20px 10px 10px 0;
+	text-align: right;
+	width: 45%;
+	float: right;
+}
+.heading {
+	width: 45%;
+	float: left;
+}
+.table-div {
+	width: 100%;
+	max-height: 270px;
+	overflow: scroll;
+}
+table#articles {
+	width: 100%;
+	overflow: scroll;
+	background-color: #333;
+}
+	table#articles tr {
+		height: 20px;
+	}
+
+	table#articles tr#column-heading {
+		text-align: left;
+		background-color: #999;
+	} 
+	table#articles tr.list-line-odd {
+		background-color: #ccc;
+	}
+	table#articles tr.list-line-even {
+		background-color: #eee;
+	}
+
