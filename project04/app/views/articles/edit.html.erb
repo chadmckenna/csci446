@@ -1,24 +1,47 @@
-<h1>Editing article</h1>
-
-<% form_for(@article) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :author %><br />
-    <%= f.text_field :author %>
-  </p>
-  <p>
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+<div id="show-actions">
+	<ul>
+		<li>
+			<%= image_tag "arrow_left.png" %>
+			<%= link_to 'list all articles', articles_path %>
+		</li>
+	</ul>
+</div>
+<div class="article">
+	<h1>Editing "<%= @article.title %>"</h1>
+	<br />
+	<table id="form-table">
+	<% form_for(@article) do |f| %>
+	  <%= f.error_messages %>
+	  <tr>
+		<td>
+			<%= f.label :title %>:
+		</td>
+		<td>
+	    	<%= f.text_field :title %>
+	  	</td>
+	  <tr>
+	  <tr>
+		<td>
+	    	<%= f.label :author %>:
+		</td>
+		<td>
+	    	<%= f.text_field :author %>
+		</td>
+	  </tr>
+	  <tr>
+	    <td>
+			<%= f.label :body %>:
+		</td>
+		<td>
+	    	<%= f.text_area :body %>
+		</td>
+	  </tr>
+	  <tr>
+		<td>
+		</td>
+		<td>
+	    	<%= f.submit 'Update Article' %>
+		</td>
+	  </tr>
+	<% end %>
+</table>

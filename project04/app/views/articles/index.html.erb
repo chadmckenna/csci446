@@ -31,5 +31,9 @@
 <br />
 
 <p>
-	<%= @articles.count %> articles.
+	<% if @articles.count.eql? 1 %>
+		1 article.
+	<% else %>
+		<%= @articles.count %> articles.
+	<% end %>
 </p>

@@ -5838,3 +5838,438 @@ Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 01:19:31) [GET]
 Rendering template within layouts/articles
 Rendering articles/show
 Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/9]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:20:48) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 107ms (View: 102, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:21:06) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:23:12) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:23:28) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:24:06) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:28:00) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:28:49) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:29:24) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:29:32) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:29:47) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:30:14) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:30:56) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:31:31) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:32:04) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:32:16) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 81ms (View: 77, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:33:22) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 43ms (View: 38, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:33:25) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/9/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:37:14) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/9/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:37:31) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/9/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 01:37:35) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et orci ante. Donec urna arcu, ullamcorper ac congue sed, sagittis venenatis sem. Curabitur vestibulum quam in sapien tristique tincidunt id a urna. Vivamus elit tortor, porta sed placerat quis, molestie venenatis erat. Integer suscipit ultrices arcu, sit amet ultricies nisi iaculis nec. Praesent rhoncus nunc sed dolor iaculis quis rhoncus ante condimentum. Phasellus ornare est ac quam auctor tempus. Maecenas eget elit euismod nisi tempor tincidunt id sed risus. Nam egestas ultricies nulla, quis posuere magna laoreet scelerisque. Curabitur vel enim libero, sit amet cursus nulla. Aliquam a turpis vitae magna sagittis molestie at eget neque. Proin id massa diam, a molestie urna.\r\n\r\nAenean feugiat elit ut sem egestas vel molestie ante pharetra. Donec id velit nunc, eu sagittis ante. Fusce sed nisl vitae metus eleifend consequat vitae sit amet sem. Nullam ac ligula ante. Etiam pulvinar fermentum quam, rhoncus sollicitudin nisi interdum vel. Nam a ante quis mauris vestibulum rutrum id ac sapien. Duis mi massa, ornare in ullamcorper quis, vehicula sed urna. Pellentesque vel varius magna. Nullam nisl arcu, pretium a mollis in, tempus eu justo. Cras vel purus in risus elementum accumsan at ut odio. Cras et sem ac felis faucibus elementum vel eget lacus. Nam ultricies volutpat mi et dignissim. Curabitur bibendum, orci pharetra vehicula rhoncus, nulla odio tincidunt sem, ut semper lorem tellus non eros. Vivamus lectus neque, posuere vel fringilla non, mollis eget justo.\r\n\r\nDonec dapibus tincidunt fermentum. Quisque ac nisl nibh, et dapibus magna. Aenean id dui neque. Morbi justo ante, imperdiet pulvinar ultrices vel, placerat ut elit. Sed rhoncus neque ut magna convallis id ornare enim rhoncus. Nullam hendrerit vulputate nibh at interdum. Ut aliquam est ac ipsum tincidunt faucibus. Vestibulum non neque vitae augue mattis lobortis. Duis condimentum tempor est a aliquam. Maecenas dictum tincidunt arcu eget cursus. Maecenas elit sapien, ultricies nec semper ut, sagittis vitae nisi. Vivamus sed mattis nulla. In quis lacus nisl. Ut nibh urna, adipiscing eu luctus a, venenatis vel purus. Nulla euismod, erat et interdum rhoncus, odio erat eleifend massa, at facilisis leo est at nisi. Integer feugiat convallis lacinia.\r\n\r\nNulla in imperdiet lacus. Nunc dapibus tristique enim a fermentum. Cras tortor magna, porttitor tincidunt ornare non, faucibus eu turpis. Curabitur eget purus odio. Sed lobortis dictum arcu, nec congue mi feugiat sit amet. Integer fringilla vehicula quam, eu lacinia quam rutrum nec. Nulla vestibulum rutrum dolor eget bibendum. Integer eu metus dui, quis sodales tellus. Praesent leo augue, tincidunt et elementum consectetur, ullamcorper ut neque. Pellentesque placerat justo non diam sodales sed tempus mi congue. Nunc ornare facilisis congue. Vestibulum purus lectus, tincidunt sit amet consectetur et, ornare mattis nisi. Praesent consectetur lectus vel nisl sollicitudin ac convallis est convallis. Nulla commodo aliquet condimentum. Phasellus quam velit, commodo sit amet placerat non, ullamcorper sit amet est. Pellentesque at ullamcorper orci. Fusce adipiscing, urna ac ullamcorper accumsan, lectus risus cursus arcu, ac gravida nisl libero a lectus. Donec semper varius risus eu semper. Mauris consectetur nisi vel mi fringilla auctor.\r\n\r\nCras laoreet pharetra luctus. Donec volutpat urna arcu. Duis accumsan, odio in pretium porttitor, mi lacus interdum urna, in porta nisl nisi a felis. Mauris scelerisque tellus et nunc aliquam et ornare elit vehicula. Proin hendrerit, leo in tincidunt fermentum, nulla metus vehicula magna, eget aliquam massa velit ac lectus. Suspendisse potenti. Vivamus vitae dui nibh, ac auctor metus. Etiam luctus, lacus ac posuere luctus, lectus quam pellentesque urna, et vulputate odio mi eu leo. Nullam a condimentum lacus. Donec a nunc adipiscing lorem dignissim mollis. Aenean rutrum massa id turpis posuere suscipit. Donec quis lacus at metus posuere posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt urna mi. Pellentesque quis tincidunt tellus. Phasellus accumsan, ipsum in interdum tincidunt, dui lectus pulvinar nisi, vel cursus orci purus id ipsum.", "author"=>"Chad McKenna", "title"=>"Article 4"}, "commit"=>"Update Article", "authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"9"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'Article 4' AND "articles".id <> 9) LIMIT 1[0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 08:37:35', "num_edits" = 3 WHERE "id" = 9[0m
+Redirected to http://localhost:3000/articles/9
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/articles/9]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 01:37:35) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/9]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:37:40) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/9/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 01:37:48) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et orci ante. Donec urna arcu, ullamcorper ac congue sed, sagittis venenatis sem. Curabitur vestibulum quam in sapien tristique tincidunt id a urna. Vivamus elit tortor, porta sed placerat quis, molestie venenatis erat. Integer suscipit ultrices arcu, sit amet ultricies nisi iaculis nec. Praesent rhoncus nunc sed dolor iaculis quis rhoncus ante condimentum. Phasellus ornare est ac quam auctor tempus. Maecenas eget elit euismod nisi tempor tincidunt id sed risus. Nam egestas ultricies nulla, quis posuere magna laoreet scelerisque. Curabitur vel enim libero, sit amet cursus nulla. Aliquam a turpis vitae magna sagittis molestie at eget neque. Proin id massa diam, a molestie urna.\r\n\r\nAenean feugiat elit ut sem egestas vel molestie ante pharetra. Donec id velit nunc, eu sagittis ante. Fusce sed nisl vitae metus eleifend consequat vitae sit amet sem. Nullam ac ligula ante. Etiam pulvinar fermentum quam, rhoncus sollicitudin nisi interdum vel. Nam a ante quis mauris vestibulum rutrum id ac sapien. Duis mi massa, ornare in ullamcorper quis, vehicula sed urna. Pellentesque vel varius magna. Nullam nisl arcu, pretium a mollis in, tempus eu justo. Cras vel purus in risus elementum accumsan at ut odio. Cras et sem ac felis faucibus elementum vel eget lacus. Nam ultricies volutpat mi et dignissim. Curabitur bibendum, orci pharetra vehicula rhoncus, nulla odio tincidunt sem, ut semper lorem tellus non eros. Vivamus lectus neque, posuere vel fringilla non, mollis eget justo.\r\n\r\nDonec dapibus tincidunt fermentum. Quisque ac nisl nibh, et dapibus magna. Aenean id dui neque. Morbi justo ante, imperdiet pulvinar ultrices vel, placerat ut elit. Sed rhoncus neque ut magna convallis id ornare enim rhoncus. Nullam hendrerit vulputate nibh at interdum. Ut aliquam est ac ipsum tincidunt faucibus. Vestibulum non neque vitae augue mattis lobortis. Duis condimentum tempor est a aliquam. Maecenas dictum tincidunt arcu eget cursus. Maecenas elit sapien, ultricies nec semper ut, sagittis vitae nisi. Vivamus sed mattis nulla. In quis lacus nisl. Ut nibh urna, adipiscing eu luctus a, venenatis vel purus. Nulla euismod, erat et interdum rhoncus, odio erat eleifend massa, at facilisis leo est at nisi. Integer feugiat convallis lacinia.\r\n\r\nNulla in imperdiet lacus. Nunc dapibus tristique enim a fermentum. Cras tortor magna, porttitor tincidunt ornare non, faucibus eu turpis. Curabitur eget purus odio. Sed lobortis dictum arcu, nec congue mi feugiat sit amet. Integer fringilla vehicula quam, eu lacinia quam rutrum nec. Nulla vestibulum rutrum dolor eget bibendum. Integer eu metus dui, quis sodales tellus. Praesent leo augue, tincidunt et elementum consectetur, ullamcorper ut neque. Pellentesque placerat justo non diam sodales sed tempus mi congue. Nunc ornare facilisis congue. Vestibulum purus lectus, tincidunt sit amet consectetur et, ornare mattis nisi. Praesent consectetur lectus vel nisl sollicitudin ac convallis est convallis. Nulla commodo aliquet condimentum. Phasellus quam velit, commodo sit amet placerat non, ullamcorper sit amet est. Pellentesque at ullamcorper orci. Fusce adipiscing, urna ac ullamcorper accumsan, lectus risus cursus arcu, ac gravida nisl libero a lectus. Donec semper varius risus eu semper. Mauris consectetur nisi vel mi fringilla auctor.\r\n\r\nCras laoreet pharetra luctus. Donec volutpat urna arcu. Duis accumsan, odio in pretium porttitor, mi lacus interdum urna, in porta nisl nisi a felis. Mauris scelerisque tellus et nunc aliquam et ornare elit vehicula. Proin hendrerit, leo in tincidunt fermentum, nulla metus vehicula magna, eget aliquam massa velit ac lectus. Suspendisse potenti. Vivamus vitae dui nibh, ac auctor metus. Etiam luctus, lacus ac posuere luctus, lectus quam pellentesque urna, et vulputate odio mi eu leo. Nullam a condimentum lacus. Donec a nunc adipiscing lorem dignissim mollis. Aenean rutrum massa id turpis posuere suscipit. Donec quis lacus at metus posuere posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt urna mi. Pellentesque quis tincidunt tellus. Phasellus accumsan, ipsum in interdum tincidunt, dui lectus pulvinar nisi, vel cursus orci purus id ipsum.", "author"=>"Chadwick McKenna", "title"=>"Article 4"}, "commit"=>"Update Article", "authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"9"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'Article 4' AND "articles".id <> 9) LIMIT 1[0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 08:37:48', "num_edits" = 4, "author" = 'Chadwick McKenna' WHERE "id" = 9[0m
+Redirected to http://localhost:3000/articles/9
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/articles/9]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 01:37:48) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/9]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:37:57) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/9/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:37:59) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 43ms (View: 38, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:38:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/1/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:38:29) [GET]
+  [4;35;1mArticle Load (65.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 107ms (View: 38, DB: 66) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:22) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 46ms (View: 42, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:24) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 44ms (View: 39, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:28) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;35;1mArticle Destroy (0.6ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/articles
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:28) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 104ms (View: 99, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:32) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"2"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+  [4;36;1mArticle Destroy (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/articles
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:32) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 37ms (View: 32, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:36) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/articles
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:36) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 36ms (View: 31, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:40) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Destroy (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:40) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 95ms (View: 91, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:43) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/articles
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:43) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 88ms (View: 83, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:47) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"11"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 11) [0m
+  [4;36;1mArticle Destroy (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/articles
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/11]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:47) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:51) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"10"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/articles
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/articles/10]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:51) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 86ms (View: 81, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:54) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"9"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+  [4;36;1mArticle Destroy (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/articles
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/articles/9]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:54) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-07 01:47:58) [DELETE]
+  Parameters: {"authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 8[0m
+Redirected to http://localhost:3000/articles
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/articles/8]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:47:58) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:48:02) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:48:09) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 01:48:11) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-07 01:48:23) [POST]
+  Parameters: {"article"=>{"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et orci ante. Donec urna arcu, ullamcorper ac congue sed, sagittis venenatis sem. Curabitur vestibulum quam in sapien tristique tincidunt id a urna. Vivamus elit tortor, porta sed placerat quis, molestie venenatis erat. Integer suscipit ultrices arcu, sit amet ultricies nisi iaculis nec. Praesent rhoncus nunc sed dolor iaculis quis rhoncus ante condimentum. Phasellus ornare est ac quam auctor tempus. Maecenas eget elit euismod nisi tempor tincidunt id sed risus. Nam egestas ultricies nulla, quis posuere magna laoreet scelerisque. Curabitur vel enim libero, sit amet cursus nulla. Aliquam a turpis vitae magna sagittis molestie at eget neque. Proin id massa diam, a molestie urna.\r\n\r\nAenean feugiat elit ut sem egestas vel molestie ante pharetra. Donec id velit nunc, eu sagittis ante. Fusce sed nisl vitae metus eleifend consequat vitae sit amet sem. Nullam ac ligula ante. Etiam pulvinar fermentum quam, rhoncus sollicitudin nisi interdum vel. Nam a ante quis mauris vestibulum rutrum id ac sapien. Duis mi massa, ornare in ullamcorper quis, vehicula sed urna. Pellentesque vel varius magna. Nullam nisl arcu, pretium a mollis in, tempus eu justo. Cras vel purus in risus elementum accumsan at ut odio. Cras et sem ac felis faucibus elementum vel eget lacus. Nam ultricies volutpat mi et dignissim. Curabitur bibendum, orci pharetra vehicula rhoncus, nulla odio tincidunt sem, ut semper lorem tellus non eros. Vivamus lectus neque, posuere vel fringilla non, mollis eget justo.\r\n\r\nDonec dapibus tincidunt fermentum. Quisque ac nisl nibh, et dapibus magna. Aenean id dui neque. Morbi justo ante, imperdiet pulvinar ultrices vel, placerat ut elit. Sed rhoncus neque ut magna convallis id ornare enim rhoncus. Nullam hendrerit vulputate nibh at interdum. Ut aliquam est ac ipsum tincidunt faucibus. Vestibulum non neque vitae augue mattis lobortis. Duis condimentum tempor est a aliquam. Maecenas dictum tincidunt arcu eget cursus. Maecenas elit sapien, ultricies nec semper ut, sagittis vitae nisi. Vivamus sed mattis nulla. In quis lacus nisl. Ut nibh urna, adipiscing eu luctus a, venenatis vel purus. Nulla euismod, erat et interdum rhoncus, odio erat eleifend massa, at facilisis leo est at nisi. Integer feugiat convallis lacinia.\r\n\r\nNulla in imperdiet lacus. Nunc dapibus tristique enim a fermentum. Cras tortor magna, porttitor tincidunt ornare non, faucibus eu turpis. Curabitur eget purus odio. Sed lobortis dictum arcu, nec congue mi feugiat sit amet. Integer fringilla vehicula quam, eu lacinia quam rutrum nec. Nulla vestibulum rutrum dolor eget bibendum. Integer eu metus dui, quis sodales tellus. Praesent leo augue, tincidunt et elementum consectetur, ullamcorper ut neque. Pellentesque placerat justo non diam sodales sed tempus mi congue. Nunc ornare facilisis congue. Vestibulum purus lectus, tincidunt sit amet consectetur et, ornare mattis nisi. Praesent consectetur lectus vel nisl sollicitudin ac convallis est convallis. Nulla commodo aliquet condimentum. Phasellus quam velit, commodo sit amet placerat non, ullamcorper sit amet est. Pellentesque at ullamcorper orci. Fusce adipiscing, urna ac ullamcorper accumsan, lectus risus cursus arcu, ac gravida nisl libero a lectus. Donec semper varius risus eu semper. Mauris consectetur nisi vel mi fringilla auctor.\r\n\r\nCras laoreet pharetra luctus. Donec volutpat urna arcu. Duis accumsan, odio in pretium porttitor, mi lacus interdum urna, in porta nisl nisi a felis. Mauris scelerisque tellus et nunc aliquam et ornare elit vehicula. Proin hendrerit, leo in tincidunt fermentum, nulla metus vehicula magna, eget aliquam massa velit ac lectus. Suspendisse potenti. Vivamus vitae dui nibh, ac auctor metus. Etiam luctus, lacus ac posuere luctus, lectus quam pellentesque urna, et vulputate odio mi eu leo. Nullam a condimentum lacus. Donec a nunc adipiscing lorem dignissim mollis. Aenean rutrum massa id turpis posuere suscipit. Donec quis lacus at metus posuere posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt urna mi. Pellentesque quis tincidunt tellus. Phasellus accumsan, ipsum in interdum tincidunt, dui lectus pulvinar nisi, vel cursus orci purus id ipsum.", "author"=>"Chad McKenna", "title"=>"Article 2"}, "commit"=>"Create", "authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI="}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'Article 2') LIMIT 1[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author", "body", "creation_date", "updated_at", "num_edits") VALUES('2011-02-07 08:48:23', 'Article 2', 'Chad McKenna', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et orci ante. Donec urna arcu, ullamcorper ac congue sed, sagittis venenatis sem. Curabitur vestibulum quam in sapien tristique tincidunt id a urna. Vivamus elit tortor, porta sed placerat quis, molestie venenatis erat. Integer suscipit ultrices arcu, sit amet ultricies nisi iaculis nec. Praesent rhoncus nunc sed dolor iaculis quis rhoncus ante condimentum. Phasellus ornare est ac quam auctor tempus. Maecenas eget elit euismod nisi tempor tincidunt id sed risus. Nam egestas ultricies nulla, quis posuere magna laoreet scelerisque. Curabitur vel enim libero, sit amet cursus nulla. Aliquam a turpis vitae magna sagittis molestie at eget neque. Proin id massa diam, a molestie urna.
+
+Aenean feugiat elit ut sem egestas vel molestie ante pharetra. Donec id velit nunc, eu sagittis ante. Fusce sed nisl vitae metus eleifend consequat vitae sit amet sem. Nullam ac ligula ante. Etiam pulvinar fermentum quam, rhoncus sollicitudin nisi interdum vel. Nam a ante quis mauris vestibulum rutrum id ac sapien. Duis mi massa, ornare in ullamcorper quis, vehicula sed urna. Pellentesque vel varius magna. Nullam nisl arcu, pretium a mollis in, tempus eu justo. Cras vel purus in risus elementum accumsan at ut odio. Cras et sem ac felis faucibus elementum vel eget lacus. Nam ultricies volutpat mi et dignissim. Curabitur bibendum, orci pharetra vehicula rhoncus, nulla odio tincidunt sem, ut semper lorem tellus non eros. Vivamus lectus neque, posuere vel fringilla non, mollis eget justo.
+
+Donec dapibus tincidunt fermentum. Quisque ac nisl nibh, et dapibus magna. Aenean id dui neque. Morbi justo ante, imperdiet pulvinar ultrices vel, placerat ut elit. Sed rhoncus neque ut magna convallis id ornare enim rhoncus. Nullam hendrerit vulputate nibh at interdum. Ut aliquam est ac ipsum tincidunt faucibus. Vestibulum non neque vitae augue mattis lobortis. Duis condimentum tempor est a aliquam. Maecenas dictum tincidunt arcu eget cursus. Maecenas elit sapien, ultricies nec semper ut, sagittis vitae nisi. Vivamus sed mattis nulla. In quis lacus nisl. Ut nibh urna, adipiscing eu luctus a, venenatis vel purus. Nulla euismod, erat et interdum rhoncus, odio erat eleifend massa, at facilisis leo est at nisi. Integer feugiat convallis lacinia.
+
+Nulla in imperdiet lacus. Nunc dapibus tristique enim a fermentum. Cras tortor magna, porttitor tincidunt ornare non, faucibus eu turpis. Curabitur eget purus odio. Sed lobortis dictum arcu, nec congue mi feugiat sit amet. Integer fringilla vehicula quam, eu lacinia quam rutrum nec. Nulla vestibulum rutrum dolor eget bibendum. Integer eu metus dui, quis sodales tellus. Praesent leo augue, tincidunt et elementum consectetur, ullamcorper ut neque. Pellentesque placerat justo non diam sodales sed tempus mi congue. Nunc ornare facilisis congue. Vestibulum purus lectus, tincidunt sit amet consectetur et, ornare mattis nisi. Praesent consectetur lectus vel nisl sollicitudin ac convallis est convallis. Nulla commodo aliquet condimentum. Phasellus quam velit, commodo sit amet placerat non, ullamcorper sit amet est. Pellentesque at ullamcorper orci. Fusce adipiscing, urna ac ullamcorper accumsan, lectus risus cursus arcu, ac gravida nisl libero a lectus. Donec semper varius risus eu semper. Mauris consectetur nisi vel mi fringilla auctor.
+
+Cras laoreet pharetra luctus. Donec volutpat urna arcu. Duis accumsan, odio in pretium porttitor, mi lacus interdum urna, in porta nisl nisi a felis. Mauris scelerisque tellus et nunc aliquam et ornare elit vehicula. Proin hendrerit, leo in tincidunt fermentum, nulla metus vehicula magna, eget aliquam massa velit ac lectus. Suspendisse potenti. Vivamus vitae dui nibh, ac auctor metus. Etiam luctus, lacus ac posuere luctus, lectus quam pellentesque urna, et vulputate odio mi eu leo. Nullam a condimentum lacus. Donec a nunc adipiscing lorem dignissim mollis. Aenean rutrum massa id turpis posuere suscipit. Donec quis lacus at metus posuere posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt urna mi. Pellentesque quis tincidunt tellus. Phasellus accumsan, ipsum in interdum tincidunt, dui lectus pulvinar nisi, vel cursus orci purus id ipsum.', NULL, '2011-02-07 08:48:23', NULL)[0m
+Redirected to http://localhost:3000/articles/12
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 01:48:23) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 12) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/12]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:48:26) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 12) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/12/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 01:48:31) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et orci ante. Donec urna arcu, ullamcorper ac congue sed, sagittis venenatis sem. Curabitur vestibulum quam in sapien tristique tincidunt id a urna. Vivamus elit tortor, porta sed placerat quis, molestie venenatis erat. Integer suscipit ultrices arcu, sit amet ultricies nisi iaculis nec. Praesent rhoncus nunc sed dolor iaculis quis rhoncus ante condimentum. Phasellus ornare est ac quam auctor tempus. Maecenas eget elit euismod nisi tempor tincidunt id sed risus. Nam egestas ultricies nulla, quis posuere magna laoreet scelerisque. Curabitur vel enim libero, sit amet cursus nulla. Aliquam a turpis vitae magna sagittis molestie at eget neque. Proin id massa diam, a molestie urna.\r\n\r\nAenean feugiat elit ut sem egestas vel molestie ante pharetra. Donec id velit nunc, eu sagittis ante. Fusce sed nisl vitae metus eleifend consequat vitae sit amet sem. Nullam ac ligula ante. Etiam pulvinar fermentum quam, rhoncus sollicitudin nisi interdum vel. Nam a ante quis mauris vestibulum rutrum id ac sapien. Duis mi massa, ornare in ullamcorper quis, vehicula sed urna. Pellentesque vel varius magna. Nullam nisl arcu, pretium a mollis in, tempus eu justo. Cras vel purus in risus elementum accumsan at ut odio. Cras et sem ac felis faucibus elementum vel eget lacus. Nam ultricies volutpat mi et dignissim. Curabitur bibendum, orci pharetra vehicula rhoncus, nulla odio tincidunt sem, ut semper lorem tellus non eros. Vivamus lectus neque, posuere vel fringilla non, mollis eget justo.\r\n\r\nDonec dapibus tincidunt fermentum. Quisque ac nisl nibh, et dapibus magna. Aenean id dui neque. Morbi justo ante, imperdiet pulvinar ultrices vel, placerat ut elit. Sed rhoncus neque ut magna convallis id ornare enim rhoncus. Nullam hendrerit vulputate nibh at interdum. Ut aliquam est ac ipsum tincidunt faucibus. Vestibulum non neque vitae augue mattis lobortis. Duis condimentum tempor est a aliquam. Maecenas dictum tincidunt arcu eget cursus. Maecenas elit sapien, ultricies nec semper ut, sagittis vitae nisi. Vivamus sed mattis nulla. In quis lacus nisl. Ut nibh urna, adipiscing eu luctus a, venenatis vel purus. Nulla euismod, erat et interdum rhoncus, odio erat eleifend massa, at facilisis leo est at nisi. Integer feugiat convallis lacinia.\r\n\r\nNulla in imperdiet lacus. Nunc dapibus tristique enim a fermentum. Cras tortor magna, porttitor tincidunt ornare non, faucibus eu turpis. Curabitur eget purus odio. Sed lobortis dictum arcu, nec congue mi feugiat sit amet. Integer fringilla vehicula quam, eu lacinia quam rutrum nec. Nulla vestibulum rutrum dolor eget bibendum. Integer eu metus dui, quis sodales tellus. Praesent leo augue, tincidunt et elementum consectetur, ullamcorper ut neque. Pellentesque placerat justo non diam sodales sed tempus mi congue. Nunc ornare facilisis congue. Vestibulum purus lectus, tincidunt sit amet consectetur et, ornare mattis nisi. Praesent consectetur lectus vel nisl sollicitudin ac convallis est convallis. Nulla commodo aliquet condimentum. Phasellus quam velit, commodo sit amet placerat non, ullamcorper sit amet est. Pellentesque at ullamcorper orci. Fusce adipiscing, urna ac ullamcorper accumsan, lectus risus cursus arcu, ac gravida nisl libero a lectus. Donec semper varius risus eu semper. Mauris consectetur nisi vel mi fringilla auctor.\r\n\r\nCras laoreet pharetra luctus. Donec volutpat urna arcu. Duis accumsan, odio in pretium porttitor, mi lacus interdum urna, in porta nisl nisi a felis. Mauris scelerisque tellus et nunc aliquam et ornare elit vehicula. Proin hendrerit, leo in tincidunt fermentum, nulla metus vehicula magna, eget aliquam massa velit ac lectus. Suspendisse potenti. Vivamus vitae dui nibh, ac auctor metus. Etiam luctus, lacus ac posuere luctus, lectus quam pellentesque urna, et vulputate odio mi eu leo. Nullam a condimentum lacus. Donec a nunc adipiscing lorem dignissim mollis. Aenean rutrum massa id turpis posuere suscipit. Donec quis lacus at metus posuere posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt urna mi. Pellentesque quis tincidunt tellus. Phasellus accumsan, ipsum in interdum tincidunt, dui lectus pulvinar nisi, vel cursus orci purus id ipsum.", "author"=>"Chadwick McKenna", "title"=>"Article 2"}, "commit"=>"Update Article", "authenticity_token"=>"lQZBz24H4Jq5RB8h8UnxW3pSWr2+WjavAkIDRvQcHCI=", "id"=>"12"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 12) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'Article 2' AND "articles".id <> 12) LIMIT 1[0m
+  [4;35;1mArticle Update (0.4ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-07 08:48:31', "num_edits" = 1, "author" = 'Chadwick McKenna' WHERE "id" = 12[0m
+Redirected to http://localhost:3000/articles/12
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/articles/12]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 01:48:31) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 12) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/12]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:48:34) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 01:50:15) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:50:19) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
