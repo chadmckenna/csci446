@@ -11,7 +11,7 @@
 	    <th style="width: 200px;">Title</th>
 	    <th style="width: 200px;">Author</th>
 	    <th>Body</th>
-	    <th  style="width: 120px;">Creation date</th>
+	    <th  style="width: 120px;">Creation Date</th>
 	  </tr>
 
 	<% @articles.each do |article| %>
@@ -19,7 +19,7 @@
 	    <td><%=h truncate(article.title, :length => 26) %></td>
 	    <td><%=h truncate(article.author, :length => 26) %></td>
 	    <td><%=h truncate(article.body, :length => 90) %></td>
-	    <td><%=h article.creation_date %></td>
+	    <td><%=h article.created_at.strftime("%m/%d/%Y") %></td>
 	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("zoom.png", :alt => "View article"), article, :title => "View this article" %></td>
 	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("page_edit.png", :alt => "Edit article"), edit_article_path(article), :title => "Edit this article" %></td>
 	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("page_delete.png", :alt => "Delete article"), article, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this article" %></td>

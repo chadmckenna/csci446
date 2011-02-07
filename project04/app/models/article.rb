@@ -1,5 +1,5 @@
 class Article < ActiveRecord::Base
-  validates_presence_of :title, :author, :body, :creation_date
+  validates_presence_of :title, :author, :body
   validates_uniqueness_of :title
   validate :author_is_not_sally
   

@@ -39,4 +39,19 @@ table#articles {
 	table#articles tr.list-line-even {
 		background-color: #eee;
 	}
+	
+.article {
+	padding: 10px 40px 10px 40px;
+}	
+
+#show-actions {
+	float: none;
+}
+	#show-actions ul {
+		list-style-type: none;
+	}
+		#show-actions ul li {
+			display: inline;
+			margin-right: 50px;
+		}
 
