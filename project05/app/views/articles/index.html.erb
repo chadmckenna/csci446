@@ -1,0 +1,39 @@
+<div class="heading">
+	<h1>All the World's Articles</h1>
+</div>
+<div class="create-article">
+	<%= image_tag "add.png", :alt => "Create new article" %>
+	<%= link_to 'Create an article', new_article_path, :title => "Create a new article" %>
+</div>
+<div class="table-div">
+	<table id="articles">
+	  <tr id="column-heading">
+	    <th style="width: 200px;">Title</th>
+	    <th style="width: 200px;">Author</th>
+	    <th>Body</th>
+	    <th  style="width: 120px;">Creation Date</th>
+	  </tr>
+
+	<% @articles.each do |article| %>
+	  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+	    <td><%=h truncate(article.title, :length => 26) %></td>
+	    <td><%=h truncate(article.author, :length => 26) %></td>
+	    <td><%=h truncate(article.body, :length => 90) %></td>
+	    <td><%=h article.created_at.strftime("%m/%d/%Y") %></td>
+	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("zoom.png", :alt => "View article"), article, :title => "View this article" %></td>
+	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("page_edit.png", :alt => "Edit article"), edit_article_path(article), :title => "Edit this article" %></td>
+	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("page_delete.png", :alt => "Delete article"), article, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this article" %></td>
+	  </tr>
+	<% end %>
+	</table>
+</div>
+
+<br />
+
+<p>
+	<% if @articles.count.eql? 1 %>
+		1 article.
+	<% else %>
+		<%= @articles.count %> articles.
+	<% end %>
+</p>

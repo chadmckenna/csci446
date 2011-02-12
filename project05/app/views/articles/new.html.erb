@@ -1,0 +1,50 @@
+<div id="show-actions">
+	<ul>
+		<li>
+			<%= image_tag "arrow_left.png" %>
+			<%= link_to 'list all articles', articles_path %>
+		</li>
+	</ul>
+</div>
+
+<div class="article">
+	<h1>Create a New Article</h1>
+	<br />
+	<table id="form-table">
+		<% form_for(@article) do |f| %>
+		  <%= f.error_messages %>
+
+		  <tr>
+			<td>
+				<%= f.label :title %>:
+			</td>
+			<td>
+		    	<%= f.text_field :title %>
+		  	</td>
+   		  <tr>
+		  <tr>
+			<td>
+		    	<%= f.label :author %>:
+			</td>
+			<td>
+		    	<%= f.text_field :author %>
+			</td>
+		  </tr>
+		  <tr>
+		    <td>
+				<%= f.label :body %>:
+			</td>
+			<td>
+		    	<%= f.text_area :body %>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+			</td>
+			<td>
+		    	<%= f.submit 'Create' %>
+			</td>
+		  </tr>
+		<% end %>
+	</table>
+</div>
