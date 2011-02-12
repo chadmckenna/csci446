@@ -43,6 +43,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+    set_edit_return_url
     @article = Article.find(params[:id])
   end
 
@@ -74,7 +75,7 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
-        format.html { redirect_to(@article, :notice => 'Article was successfully updated.') }
+        format.html { redirect_to(session[:edit_redirect], :notice => 'Article was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -94,4 +95,9 @@ class ArticlesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+private
+  def set_edit_return_url
+    session[:edit_redirect] = request.referer
+  end    
 end

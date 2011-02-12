@@ -6273,3 +6273,304 @@ Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 01:50:19) [GET]
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:33:55) [GET]
+  [4;36;1mArticle Load (26.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 204ms (View: 144, DB: 27) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:38:51) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:43) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:43) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 74ms (View: 70, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:45) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:45) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:46) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 74ms (View: 70, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:47) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:48) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:49) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 75ms (View: 71, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-09 13:39:49) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:20:58) [GET]
+  [4;36;1mArticle Load (25.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 177ms (View: 133, DB: 26) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:21:02) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:21:08) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-12 13:21:10) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 107ms (View: 102, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:21:13) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:21:43) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:21:44) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:21:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 78ms (View: 73, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:22:51) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-12 13:22:54) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et orci ante. Donec urna arcu, ullamcorper ac congue sed, sagittis venenatis sem. Curabitur vestibulum quam in sapien tristique tincidunt id a urna. Vivamus elit tortor, porta sed placerat quis, molestie venenatis erat. Integer suscipit ultrices arcu, sit amet ultricies nisi iaculis nec. Praesent rhoncus nunc sed dolor iaculis quis rhoncus ante condimentum. Phasellus ornare est ac quam auctor tempus. Maecenas eget elit euismod nisi tempor tincidunt id sed risus. Nam egestas ultricies nulla, quis posuere magna laoreet scelerisque. Curabitur vel enim libero, sit amet cursus nulla. Aliquam a turpis vitae magna sagittis molestie at eget neque. Proin id massa diam, a molestie urna.\r\n\r\nAenean feugiat elit ut sem egestas vel molestie ante pharetra. Donec id velit nunc, eu sagittis ante. Fusce sed nisl vitae metus eleifend consequat vitae sit amet sem. Nullam ac ligula ante. Etiam pulvinar fermentum quam, rhoncus sollicitudin nisi interdum vel. Nam a ante quis mauris vestibulum rutrum id ac sapien. Duis mi massa, ornare in ullamcorper quis, vehicula sed urna. Pellentesque vel varius magna. Nullam nisl arcu, pretium a mollis in, tempus eu justo. Cras vel purus in risus elementum accumsan at ut odio. Cras et sem ac felis faucibus elementum vel eget lacus. Nam ultricies volutpat mi et dignissim. Curabitur bibendum, orci pharetra vehicula rhoncus, nulla odio tincidunt sem, ut semper lorem tellus non eros. Vivamus lectus neque, posuere vel fringilla non, mollis eget justo.\r\n\r\nDonec dapibus tincidunt fermentum. Quisque ac nisl nibh, et dapibus magna. Aenean id dui neque. Morbi justo ante, imperdiet pulvinar ultrices vel, placerat ut elit. Sed rhoncus neque ut magna convallis id ornare enim rhoncus. Nullam hendrerit vulputate nibh at interdum. Ut aliquam est ac ipsum tincidunt faucibus. Vestibulum non neque vitae augue mattis lobortis. Duis condimentum tempor est a aliquam. Maecenas dictum tincidunt arcu eget cursus. Maecenas elit sapien, ultricies nec semper ut, sagittis vitae nisi. Vivamus sed mattis nulla. In quis lacus nisl. Ut nibh urna, adipiscing eu luctus a, venenatis vel purus. Nulla euismod, erat et interdum rhoncus, odio erat eleifend massa, at facilisis leo est at nisi. Integer feugiat convallis lacinia.\r\n\r\nNulla in imperdiet lacus. Nunc dapibus tristique enim a fermentum. Cras tortor magna, porttitor tincidunt ornare non, faucibus eu turpis. Curabitur eget purus odio. Sed lobortis dictum arcu, nec congue mi feugiat sit amet. Integer fringilla vehicula quam, eu lacinia quam rutrum nec. Nulla vestibulum rutrum dolor eget bibendum. Integer eu metus dui, quis sodales tellus. Praesent leo augue, tincidunt et elementum consectetur, ullamcorper ut neque. Pellentesque placerat justo non diam sodales sed tempus mi congue. Nunc ornare facilisis congue. Vestibulum purus lectus, tincidunt sit amet consectetur et, ornare mattis nisi. Praesent consectetur lectus vel nisl sollicitudin ac convallis est convallis. Nulla commodo aliquet condimentum. Phasellus quam velit, commodo sit amet placerat non, ullamcorper sit amet est. Pellentesque at ullamcorper orci. Fusce adipiscing, urna ac ullamcorper accumsan, lectus risus cursus arcu, ac gravida nisl libero a lectus. Donec semper varius risus eu semper. Mauris consectetur nisi vel mi fringilla auctor.\r\n\r\nCras laoreet pharetra luctus. Donec volutpat urna arcu. Duis accumsan, odio in pretium porttitor, mi lacus interdum urna, in porta nisl nisi a felis. Mauris scelerisque tellus et nunc aliquam et ornare elit vehicula. Proin hendrerit, leo in tincidunt fermentum, nulla metus vehicula magna, eget aliquam massa velit ac lectus. Suspendisse potenti. Vivamus vitae dui nibh, ac auctor metus. Etiam luctus, lacus ac posuere luctus, lectus quam pellentesque urna, et vulputate odio mi eu leo. Nullam a condimentum lacus. Donec a nunc adipiscing lorem dignissim mollis. Aenean rutrum massa id turpis posuere suscipit. Donec quis lacus at metus posuere posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt urna mi. Pellentesque quis tincidunt tellus. Phasellus accumsan, ipsum in interdum tincidunt, dui lectus pulvinar nisi, vel cursus orci purus id ipsum.", "author"=>"Me", "title"=>"Article 1"}, "commit"=>"Update Article", "authenticity_token"=>"VCgojKcNWNLbYwbWBACufyIH4hn+mpy6fm+gdbIzRwM=", "id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'Article 1' AND "articles".id <> 6) LIMIT 1[0m
+  [4;35;1mArticle Update (0.4ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-12 20:22:54', "num_edits" = 1 WHERE "id" = 6[0m
+Redirected to http://localhost:3000/articles
+Completed in 364ms (DB: 1) | 302 Found [http://localhost/articles/6]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:22:54) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-12 13:22:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:23:00) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-12 13:23:03) [PUT]
+  Parameters: {"article"=>{"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et orci ante. Donec urna arcu, ullamcorper ac congue sed, sagittis venenatis sem. Curabitur vestibulum quam in sapien tristique tincidunt id a urna. Vivamus elit tortor, porta sed placerat quis, molestie venenatis erat. Integer suscipit ultrices arcu, sit amet ultricies nisi iaculis nec. Praesent rhoncus nunc sed dolor iaculis quis rhoncus ante condimentum. Phasellus ornare est ac quam auctor tempus. Maecenas eget elit euismod nisi tempor tincidunt id sed risus. Nam egestas ultricies nulla, quis posuere magna laoreet scelerisque. Curabitur vel enim libero, sit amet cursus nulla. Aliquam a turpis vitae magna sagittis molestie at eget neque. Proin id massa diam, a molestie urna.\r\n\r\nAenean feugiat elit ut sem egestas vel molestie ante pharetra. Donec id velit nunc, eu sagittis ante. Fusce sed nisl vitae metus eleifend consequat vitae sit amet sem. Nullam ac ligula ante. Etiam pulvinar fermentum quam, rhoncus sollicitudin nisi interdum vel. Nam a ante quis mauris vestibulum rutrum id ac sapien. Duis mi massa, ornare in ullamcorper quis, vehicula sed urna. Pellentesque vel varius magna. Nullam nisl arcu, pretium a mollis in, tempus eu justo. Cras vel purus in risus elementum accumsan at ut odio. Cras et sem ac felis faucibus elementum vel eget lacus. Nam ultricies volutpat mi et dignissim. Curabitur bibendum, orci pharetra vehicula rhoncus, nulla odio tincidunt sem, ut semper lorem tellus non eros. Vivamus lectus neque, posuere vel fringilla non, mollis eget justo.\r\n\r\nDonec dapibus tincidunt fermentum. Quisque ac nisl nibh, et dapibus magna. Aenean id dui neque. Morbi justo ante, imperdiet pulvinar ultrices vel, placerat ut elit. Sed rhoncus neque ut magna convallis id ornare enim rhoncus. Nullam hendrerit vulputate nibh at interdum. Ut aliquam est ac ipsum tincidunt faucibus. Vestibulum non neque vitae augue mattis lobortis. Duis condimentum tempor est a aliquam. Maecenas dictum tincidunt arcu eget cursus. Maecenas elit sapien, ultricies nec semper ut, sagittis vitae nisi. Vivamus sed mattis nulla. In quis lacus nisl. Ut nibh urna, adipiscing eu luctus a, venenatis vel purus. Nulla euismod, erat et interdum rhoncus, odio erat eleifend massa, at facilisis leo est at nisi. Integer feugiat convallis lacinia.\r\n\r\nNulla in imperdiet lacus. Nunc dapibus tristique enim a fermentum. Cras tortor magna, porttitor tincidunt ornare non, faucibus eu turpis. Curabitur eget purus odio. Sed lobortis dictum arcu, nec congue mi feugiat sit amet. Integer fringilla vehicula quam, eu lacinia quam rutrum nec. Nulla vestibulum rutrum dolor eget bibendum. Integer eu metus dui, quis sodales tellus. Praesent leo augue, tincidunt et elementum consectetur, ullamcorper ut neque. Pellentesque placerat justo non diam sodales sed tempus mi congue. Nunc ornare facilisis congue. Vestibulum purus lectus, tincidunt sit amet consectetur et, ornare mattis nisi. Praesent consectetur lectus vel nisl sollicitudin ac convallis est convallis. Nulla commodo aliquet condimentum. Phasellus quam velit, commodo sit amet placerat non, ullamcorper sit amet est. Pellentesque at ullamcorper orci. Fusce adipiscing, urna ac ullamcorper accumsan, lectus risus cursus arcu, ac gravida nisl libero a lectus. Donec semper varius risus eu semper. Mauris consectetur nisi vel mi fringilla auctor.\r\n\r\nCras laoreet pharetra luctus. Donec volutpat urna arcu. Duis accumsan, odio in pretium porttitor, mi lacus interdum urna, in porta nisl nisi a felis. Mauris scelerisque tellus et nunc aliquam et ornare elit vehicula. Proin hendrerit, leo in tincidunt fermentum, nulla metus vehicula magna, eget aliquam massa velit ac lectus. Suspendisse potenti. Vivamus vitae dui nibh, ac auctor metus. Etiam luctus, lacus ac posuere luctus, lectus quam pellentesque urna, et vulputate odio mi eu leo. Nullam a condimentum lacus. Donec a nunc adipiscing lorem dignissim mollis. Aenean rutrum massa id turpis posuere suscipit. Donec quis lacus at metus posuere posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt urna mi. Pellentesque quis tincidunt tellus. Phasellus accumsan, ipsum in interdum tincidunt, dui lectus pulvinar nisi, vel cursus orci purus id ipsum.", "author"=>"Me", "title"=>"Article 1"}, "commit"=>"Update Article", "authenticity_token"=>"VCgojKcNWNLbYwbWBACufyIH4hn+mpy6fm+gdbIzRwM=", "id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'Article 1' AND "articles".id <> 6) LIMIT 1[0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-12 20:23:03', "num_edits" = 2 WHERE "id" = 6[0m
+Redirected to http://localhost:3000/articles/6
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/articles/6]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-12 13:23:03) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:23:07) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:23:11) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:26:06) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:26:11) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-12 13:26:17) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:26:19) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-12 13:26:22) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:26:25) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-12 13:26:27) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 72ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:26:30) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-12 13:26:32) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:26:34) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-12 13:26:36) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-12 13:26:40) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]

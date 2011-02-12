@@ -2,10 +2,11 @@
 	<ul>
 		<li>
 			<%= image_tag "arrow_left.png" %>
-			<%= link_to 'list all articles', articles_path %>
+			<%= link_to 'back', session[:edit_redirect] %>
 		</li>
 	</ul>
 </div>
+<!--<%= session[:edit_redirect] %>-->
 <div class="article">
 	<h1>Editing "<%= @article.title %>"</h1>
 	<br />
