@@ -12,13 +12,12 @@
 ActiveRecord::Schema.define(:version => 20110207080318) do
 
   create_table "articles", :force => true do |t|
-    t.string   "title"
-    t.string   "author"
-    t.text     "body"
-    t.date     "creation_date"
+    t.string   "title",                     :null => false
+    t.string   "author",                    :null => false
+    t.text     "body",                      :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "num_edits"
+    t.integer  "num_edits",  :default => 0
   end
 
 end

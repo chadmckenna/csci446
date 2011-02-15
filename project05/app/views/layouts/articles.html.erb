@@ -8,14 +8,15 @@
   <%= stylesheet_link_tag 'scaffold', 'articles' %>
 </head>
 <body>
-	<div class="title">
-		<h1>Articl.es</h1>
-		... <%= @subtitle %>
+	<div class="container">
+		<div class="title">
+			<h1>Articl.es</h1>
+			... <%= @subtitle %>
+		</div>
+
+		<p style="color: green"><%= notice %></p>
+
+		<%= yield %>
 	</div>
-
-<p style="color: green"><%= notice %></p>
-
-<%= yield %>
-
 </body>
 </html>

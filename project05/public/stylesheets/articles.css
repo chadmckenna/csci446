@@ -17,12 +17,10 @@
 }
 .table-div {
 	width: 100%;
-	max-height: 270px;
-	overflow: scroll;
+	min-height: 80px;
 }
 table#articles {
 	width: 100%;
-	overflow: scroll;
 	background-color: #333;
 }
 	table#articles tr {
@@ -62,3 +60,8 @@ table#form-table {
 		min-width: 100px;
 		vertical-align: top;
 	}
+
+table#articles td a {
+	text-decoration: none;
+	background-color: inherit;
+}

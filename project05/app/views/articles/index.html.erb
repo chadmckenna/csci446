@@ -20,9 +20,11 @@
 	    <td><%=h truncate(article.author, :length => 26) %></td>
 	    <td><%=h truncate(article.body, :length => 90) %></td>
 	    <td><%=h article.created_at.strftime("%m/%d/%Y") %></td>
-	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("zoom.png", :alt => "View article"), article, :title => "View this article" %></td>
-	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("page_edit.png", :alt => "Edit article"), edit_article_path(article), :title => "Edit this article" %></td>
-	    <td style="text-align: center; width: 25px;"><%= link_to image_tag ("page_delete.png", :alt => "Delete article"), article, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this article" %></td>
+	    <td style="text-align: center; width: 75px;">
+			<%= link_to image_tag ("zoom.png", :alt => "View article"), article, :title => "View this article" %>
+	    	<%= link_to image_tag ("page_edit.png", :alt => "Edit article"), edit_article_path(article), :title => "Edit this article" %>
+	    	<%= link_to image_tag ("page_delete.png", :alt => "Delete article"), article, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this article" %>
+		</td>
 	  </tr>
 	<% end %>
 	</table>
@@ -31,9 +33,6 @@
 <br />
 
 <p>
-	<% if @articles.count.eql? 1 %>
-		1 article.
-	<% else %>
-		<%= @articles.count %> articles.
-	<% end %>
+	<%= pluralize(@article_count, 'article') %>
+	<%= will_paginate @articles %>
 </p>
