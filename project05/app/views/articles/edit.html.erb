@@ -23,10 +23,10 @@
 	  <tr>
 	  <tr>
 		<td>
-	    	<%= f.label :author %>:
+	    	<%= f.label :author_id %>:
 		</td>
 		<td>
-	    	<%= f.text_field :author %>
+	    	<%= f.select :author_id, Author.all.map { |author| [author.author, author.id] }, :prompt => "Select an author" %>
 		</td>
 	  </tr>
 	  <tr>

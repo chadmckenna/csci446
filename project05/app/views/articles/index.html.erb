@@ -17,7 +17,7 @@
 	<% @articles.each do |article| %>
 	  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
 	    <td><%=h truncate(article.title, :length => 26) %></td>
-	    <td><%=h truncate(article.author, :length => 26) %></td>
+	    <td><%=h Author.find(article.author_id).author %></td>
 	    <td><%=h truncate(article.body, :length => 90) %></td>
 	    <td><%=h article.created_at.strftime("%m/%d/%Y") %></td>
 	    <td style="text-align: center; width: 75px;">
