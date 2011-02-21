@@ -27,7 +27,7 @@
 
 	<p>
 	  <b>by 
-		<%=h Author.find(@article.author_id).author %> has been edited 
+		<%=h @article.author %> has been edited 
 		<% if @article.num_edits.nil? %> 
 			0
 		<% else %>

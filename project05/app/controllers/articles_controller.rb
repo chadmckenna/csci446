@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
+  before_filter :load_authors, :only => [:new, :edit, :update]
+  
   def initialize
     subtitles = [
       "with a name .com hipsters love!",
@@ -46,7 +48,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1/edit
   def edit
     set_edit_return_url
-    @article = Article.find(params[:id])
+    @article = Article.find(params[:id]) 
   end
 
   # POST /articles
@@ -102,4 +104,8 @@ private
   def set_edit_return_url
     session[:edit_redirect] = request.referer
   end    
+  
+  def load_authors
+    @authors = Author.all
+  end
 end
