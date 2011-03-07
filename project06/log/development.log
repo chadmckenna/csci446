@@ -5357,3 +5357,1731 @@ Rendering template within layouts/application
 Rendering games/index
   [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
 Completed in 106ms (View: 101, DB: 1) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 10:12:36) [GET]
+  [4;36;1mGame Load (1.1ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 130ms (View: 122, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-06 10:12:42) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (24.2ms)
+Completed in 135ms (View: 59, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-06 10:13:15) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "user"=>{"password_confirmation"=>"n00b", "role_id"=>"1", "username"=>"_why", "last_name"=>"The Lucky Stiff", "password"=>"n00b", "email"=>"why@gmail.com", "first_name"=>"_Why"}}
+  [4;35;1mUser Load (61.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'why@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = '_why') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "username", "role_id", "password_salt", "persistence_token", "last_name", "last_login_at", "first_name", "email") VALUES('2011-03-06 17:13:16', '2bdd8bfa43ba0ff6caae009c19574efa38edb1d9674146f448406efcabdc8a1fc28d5c9e6f0de97e145b8a0bff4dcb994560af3190a350a3201f8bab1e168c15', '2011-03-06 17:13:16', '_why', 1, 'gFU4gKjNQ5Z2FNEXratF', '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41', 'The Lucky Stiff', NULL, '_Why', 'why@gmail.com')[0m
+Redirected to http://localhost:3000/
+Completed in 792ms (DB: 62) | 302 Found [http://localhost/users]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 10:13:16) [GET]
+  [4;35;1mGame Load (0.5ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Completed in 59ms (View: 54, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 10:13:20) [GET]
+  Parameters: {"id"=>"current"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (5.5ms)
+Completed in 48ms (View: 33, DB: 0) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 10:22:34) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (6.0ms)
+Completed in 23ms (View: 8, DB: 0) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2011-03-06 10:22:41) [PUT]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "id"=>"2", "user"=>{"password_confirmation"=>"", "role_id"=>"1", "username"=>"_why1", "last_name"=>"The Lucky Stiff", "password"=>"", "email"=>"why@gmail.com", "first_name"=>"_Why"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: username
+Redirected to http://localhost:3000/
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/users/2]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 10:22:41) [GET]
+  [4;36;1mGame Load (0.5ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Completed in 105ms (View: 100, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 10:22:43) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (5.5ms)
+Completed in 22ms (View: 7, DB: 0) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 12:47:20) [GET]
+  Parameters: {"id"=>"current"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (8.5ms)
+Completed in 77ms (View: 31, DB: 1) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing GamesController#show (for 127.0.0.1 at 2011-03-06 12:47:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGame Load (26.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering games/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Completed in 120ms (View: 71, DB: 26) | 200 OK [http://localhost/games/1]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 15:50:46) [GET]
+  [4;36;1mGame Load (27.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Completed in 132ms (View: 86, DB: 28) | 200 OK [http://localhost/]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:09:18) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, edit, new, show, and update):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-06 16:09:24) [GET]
+
+ActionController::RoutingError (No route matches "/role" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 16:09:35) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, edit, new, and update):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-03-06 16:09:45) [GET]
+  Parameters: {"id"=>"edit"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, new, and update):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-06 16:09:53) [GET]
+
+ActionController::RoutingError (No route matches "/user/edit" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-06 16:10:01) [GET]
+
+ActionController::RoutingError (No route matches "/user/current/edit" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 16:10:09) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (5.4ms)
+Completed in 22ms (View: 7, DB: 0) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:10:22) [GET]
+  Parameters: {"id"=>"edit"}
+
+ActiveRecord::StatementInvalid (Could not find table 'roles'):
+  app/controllers/roles_controller.rb:31:in `show'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGames (20110227234118)
+Migrating to CreateUsers (20110228002135)
+Migrating to CreateRoles (20110306230342)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110306230342')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:10:43) [GET]
+  Parameters: {"id"=>"edit"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Role with ID=edit):
+  app/controllers/roles_controller.rb:31:in `show'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:10:52) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, edit, new, show, and update):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:10:56) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Role with ID=show):
+  app/controllers/roles_controller.rb:31:in `show'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:11:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Role with ID=1):
+  app/controllers/roles_controller.rb:31:in `show'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing RolesController#new (for 127.0.0.1 at 2011-03-06 16:11:07) [GET]
+Rendering template within layouts/application
+Rendering roles/new
+Rendered roles/_form (7.9ms)
+Completed in 107ms (View: 102, DB: 0) | 200 OK [http://localhost/roles/new]
+
+
+Processing RolesController#create (for 127.0.0.1 at 2011-03-06 16:11:15) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "role"=>{"user_id"=>"", "role_name"=>"Admin"}}
+  [4;36;1mRole Create (0.3ms)[0m   [0;1mINSERT INTO "roles" ("created_at", "updated_at", "user_id", "role_name") VALUES('2011-03-06 23:11:15', '2011-03-06 23:11:15', NULL, 'Admin')[0m
+Redirected to http://localhost:3000/roles/1
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/roles]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:11:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/roles/1]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2011-03-06 16:11:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/edit
+Rendered roles/_form (5.6ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/roles/1/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2011-03-06 16:11:23) [PUT]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "role"=>{"user_id"=>"", "role_name"=>"Admin"}, "id"=>"1"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Redirected to http://localhost:3000/roles/1
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/roles/1]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:11:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 93ms (View: 3, DB: 0) | 200 OK [http://localhost/roles/1]
+
+
+Processing RolesController#new (for 127.0.0.1 at 2011-03-06 16:11:50) [GET]
+Rendering template within layouts/application
+Rendering roles/new
+Rendered roles/_form (5.6ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/roles/new]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:18:16) [GET]
+
+NameError (uninitialized constant RolesController::Roles):
+  app/controllers/roles_controller.rb:3:in `index'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:19:38) [GET]
+
+NameError (uninitialized constant RolesController::Roles):
+  app/controllers/roles_controller.rb:3:in `index'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:19:39) [GET]
+
+NameError (uninitialized constant RolesController::Roles):
+  app/controllers/roles_controller.rb:3:in `index'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:20:53) [GET]
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+
+ActionView::TemplateError (Inconsistent indentation: "\t        " was used for indentation, but the rest of the document was indented using 1 tab.) on line #15 of app/views/roles/index.html.haml:
+12: 			%td= h role.role_name
+13: 			%td= h role.user_id
+14: 			%td.link= link_to 'Show', role
+15: 	        %td.link= link_to 'Edit', edit_role_path(role)
+16: 	        %td.link= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+17: 	
+18: 	%p= link_to "New Role", new_role_path
+
+    app/views/roles/index.html.haml:15
+    haml (3.0.25) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:1048:in `block_opened?'
+    haml (3.0.25) lib/haml/precompiler.rb:776:in `render_tag'
+    haml (3.0.25) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:22:38) [GET]
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+ERROR: compiling _run_haml_app47views47roles47index46html46haml RAISED compile error
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:19: syntax error, unexpected kENSURE, expecting kEND
+...\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:22: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47roles47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :escape_html=>false, :format=>:xhtml, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :encoding=>nil, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<title>Roles Index</title>\n<div class='body'>\n  <h1>Roles</h1>\n  <table>\n    <tr>\n      <th>Role</th>\n      <th>User</th>\n    </tr>\n", 2, false);
+
+
+
+
+
+
+
+
+ for role in @roles;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-odd', 'list-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h role.role_name
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h role.user_id
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Show', role
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Edit', edit_role_path(role)
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n  </table>\n  <p>#{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "New Role", new_role_path
+));}</p>\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:22:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:19: syntax error, unexpected kENSURE, expecting kEND
+...\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:22: syntax error, unexpected $end, expecting kEND) on line #19 of app/views/roles/index.html.haml:
+16:       %td.link= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+17: 	
+18:   %p= link_to "New Role", new_role_path
+
+    app/views/roles/index.html.haml:22:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (126.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:23:41) [GET]
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+ERROR: compiling _run_haml_app47views47roles47index46html46haml RAISED compile error
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:17: syntax error, unexpected kENSURE, expecting kEND
+...\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:20: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47roles47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :escape_html=>false, :format=>:xhtml, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :encoding=>nil, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<title>Roles Index</title>\n<div class='body'>\n  <h1>Roles</h1>\n  <table>\n    <tr>\n      <th>Role</th>\n      <th>User</th>\n    </tr>\n", 2, false);
+
+
+
+
+
+
+
+
+ for role in @roles;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-odd', 'list-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h role.role_name
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h role.user_id
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Show', role
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Edit', edit_role_path(role)
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n  </table>\n</div>\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:20:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:17: syntax error, unexpected kENSURE, expecting kEND
+...\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:20: syntax error, unexpected $end, expecting kEND) on line #17 of app/views/roles/index.html.haml:
+14:       %td.link= link_to 'Show', role
+15:       %td.link= link_to 'Edit', edit_role_path(role)
+16:       %td.link= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/roles/index.html.haml:20:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:23:42) [GET]
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+ERROR: compiling _run_haml_app47views47roles47index46html46haml RAISED compile error
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:17: syntax error, unexpected kENSURE, expecting kEND
+...\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:20: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47roles47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :escape_html=>false, :format=>:xhtml, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :encoding=>nil, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<title>Roles Index</title>\n<div class='body'>\n  <h1>Roles</h1>\n  <table>\n    <tr>\n      <th>Role</th>\n      <th>User</th>\n    </tr>\n", 2, false);
+
+
+
+
+
+
+
+
+ for role in @roles;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-odd', 'list-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h role.role_name
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h role.user_id
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Show', role
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Edit', edit_role_path(role)
+));}</td>\n      <td class='link'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n  </table>\n</div>\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:20:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:17: syntax error, unexpected kENSURE, expecting kEND
+...\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/cmckenna/Documents/cs446/src/project06/app/views/roles/index.html.haml:20: syntax error, unexpected $end, expecting kEND) on line #17 of app/views/roles/index.html.haml:
+14:       %td.link= link_to 'Show', role
+15:       %td.link= link_to 'Edit', edit_role_path(role)
+16:       %td.link= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/roles/index.html.haml:20:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:24:36) [GET]
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/roles]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:25:17) [GET]
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/roles]
+
+
+Processing RolesController#new (for 127.0.0.1 at 2011-03-06 16:25:20) [GET]
+Rendering template within layouts/application
+Rendering roles/new
+Rendered roles/_form (92.8ms)
+Completed in 99ms (View: 95, DB: 0) | 200 OK [http://localhost/roles/new]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2011-03-06 16:25:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/edit
+Rendered roles/_form (5.9ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/roles/1/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2011-03-06 16:25:27) [PUT]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "role"=>{"user_id"=>"", "role_name"=>"Admin"}, "id"=>"1"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Redirected to http://localhost:3000/roles/1
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/roles/1]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:25:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/roles/1]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2011-03-06 16:25:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/edit
+Rendered roles/_form (5.8ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/roles/1/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2011-03-06 16:25:31) [PUT]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "role"=>{"user_id"=>"", "role_name"=>"Admin"}, "id"=>"1"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Redirected to http://localhost:3000/roles/1
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/roles/1]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:25:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/roles/1]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:26:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+
+ActionView::TemplateError (undefined local variable or method `role' for #<ActionView::Base:0x1033c7a90>) on line #11 of app/views/roles/show.html.haml:
+8:   =h @role.user_id
+9: %p
+10:   = link_to "Edit", edit_role_path(@role) |
+11:   = link_to "View All", role
+
+    app/views/roles/show.html.haml:11:in `_run_haml_app47views47roles47show46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:26:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/roles/1]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:26:38) [GET]
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/roles]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:26:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/roles/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGames (20110227234118)
+Migrating to CreateUsers (20110228002135)
+Migrating to CreateRoles (20110306230342)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:32:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/roles/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRoles (20110306230342)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "roles"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20110306230342'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGames (20110227234118)
+Migrating to CreateUsers (20110228002135)
+Migrating to CreateRoles (20110306230342)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110306230342')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("games")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:32:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Role with ID=1):
+  app/controllers/roles_controller.rb:35:in `show'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:32:37) [GET]
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/roles]
+
+
+Processing RolesController#new (for 127.0.0.1 at 2011-03-06 16:32:39) [GET]
+Rendering template within layouts/application
+Rendering roles/new
+
+ActionView::TemplateError (undefined method `user_id' for #<Role id: nil, role_name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/roles/_form.html.haml:
+7:   %p
+8:     = f.label :user_id
+9:     %br
+10:     = f.text_field :user_id
+11:   %p
+12:     = f.submit
+
+    app/views/roles/_form.html.haml:10:in `_run_haml_app47views47roles47_form46html46haml_locals_form_object'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/roles/_form.html.haml:1:in `_run_haml_app47views47roles47_form46html46haml_locals_form_object'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.25) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/roles/new.html.haml:3:in `_run_haml_app47views47roles47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#new (for 127.0.0.1 at 2011-03-06 16:33:27) [GET]
+Rendering template within layouts/application
+Rendering roles/new
+Rendered roles/_form (7.0ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/roles/new]
+
+
+Processing RolesController#create (for 127.0.0.1 at 2011-03-06 16:33:33) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "role"=>{"role_name"=>"Admin"}}
+  [4;36;1mRole Create (0.5ms)[0m   [0;1mINSERT INTO "roles" ("created_at", "updated_at", "role_name") VALUES('2011-03-06 23:33:33', '2011-03-06 23:33:33', 'Admin')[0m
+Redirected to http://localhost:3000/roles/1
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/roles]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:33:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+
+ActionView::TemplateError (undefined method `user_id' for #<Role:0x1030854b8>) on line #8 of app/views/roles/show.html.haml:
+5:   =h @role.role_name
+6: %p
+7:   %strong User:
+8:   =h @role.user_id
+9: %p
+10:   = link_to "Edit", edit_role_path(@role)
+11:   |
+
+    app/views/roles/show.html.haml:8:in `_run_haml_app47views47roles47show46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:33:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/roles/1]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:33:56) [GET]
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+
+ActionView::TemplateError (undefined method `user_id' for #<Role:0x1031f19c8>) on line #13 of app/views/roles/index.html.haml:
+10:     - for role in @roles
+11:       %tr{:class => cycle('list-odd', 'list-even')}
+12:         %td= h role.role_name
+13:         %td= h role.user_id
+14:         %td.link= link_to 'Show', role
+15:         %td.link= link_to 'Edit', edit_role_path(role)
+16:         %td.link= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/roles/index.html.haml:13:in `_run_haml_app47views47roles47index46html46haml'
+    app/views/roles/index.html.haml:10:in `each'
+    app/views/roles/index.html.haml:10:in `_run_haml_app47views47roles47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:34:14) [GET]
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+Completed in 102ms (View: 98, DB: 0) | 200 OK [http://localhost/roles]
+
+
+Processing RolesController#new (for 127.0.0.1 at 2011-03-06 16:34:18) [GET]
+Rendering template within layouts/application
+Rendering roles/new
+Rendered roles/_form (4.9ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/roles/new]
+
+
+Processing RolesController#create (for 127.0.0.1 at 2011-03-06 16:34:23) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "role"=>{"role_name"=>"Member"}}
+  [4;35;1mRole Create (0.3ms)[0m   [0mINSERT INTO "roles" ("created_at", "updated_at", "role_name") VALUES('2011-03-06 23:34:23', '2011-03-06 23:34:23', 'Member')[0m
+Redirected to http://localhost:3000/roles/2
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/roles]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:34:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/roles/2]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:34:25) [GET]
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/roles]
+
+
+Processing RolesController#new (for 127.0.0.1 at 2011-03-06 16:34:32) [GET]
+Rendering template within layouts/application
+Rendering roles/new
+Rendered roles/_form (5.0ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/roles/new]
+
+
+Processing RolesController#create (for 127.0.0.1 at 2011-03-06 16:34:35) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "role"=>{"role_name"=>"Guest"}}
+  [4;36;1mRole Create (0.3ms)[0m   [0;1mINSERT INTO "roles" ("created_at", "updated_at", "role_name") VALUES('2011-03-06 23:34:35', '2011-03-06 23:34:35', 'Guest')[0m
+Redirected to http://localhost:3000/roles/3
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/roles]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2011-03-06 16:34:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering roles/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/roles/3]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-03-06 16:34:37) [GET]
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/application
+Rendering roles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/roles]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 16:38:00) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, edit, new, and update):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 16:42:29) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #13 of app/views/users/index.html.haml:
+10:       %th Last Name
+11:       %th Email
+12:       %th Role
+13:     - for user in @users
+14:       %tr{:class => cycle('list-odd', 'list-even')}
+15:         %td= h user.username
+16:         %td= h user.first_name
+
+    app/views/users/index.html.haml:13:in `_run_haml_app47views47users47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 16:43:33) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 16:58:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (5.3ms)
+Completed in 22ms (View: 7, DB: 0) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 17:03:47) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `load_authors' for #<UsersController:0x102eaf300>):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 17:04:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (5.6ms)
+Completed in 43ms (View: 7, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 17:07:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (5.2ms)
+Completed in 24ms (View: 7, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 17:07:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (5.2ms)
+Completed in 25ms (View: 7, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 17:07:26) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+
+ActionView::TemplateError (undefined method `role_name' for #<User:0x1031253f0>) on line #19 of app/views/users/index.html.haml:
+16:         %td= h user.first_name
+17:         %td= h user.last_name
+18:         %td= h user.email
+19:         %td= h user.role_name
+20:         %td.link= link_to 'Show', user
+21:         %td.link= link_to 'Edit', edit_user_path(user)
+22:         %td.link= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/users/index.html.haml:19:in `_run_haml_app47views47users47index46html46haml'
+    app/views/users/index.html.haml:13:in `each'
+    app/views/users/index.html.haml:13:in `_run_haml_app47views47users47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (126.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 17:09:21) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/users/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 17:09:38) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/users/]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 17:09:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM "roles" [0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (5.7ms)
+Completed in 110ms (View: 8, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 17:13:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM "roles" [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined local variable or method `a' for #<ActionView::Base:0x1033fe680>) on line #36 of app/views/users/_form.html.haml:
+33:   %p
+34:     = f.label :role_id
+35:     %br
+36:     = f.select :role_id, @roles.collect { |r| [r.role_name, a.id] }, :include_blank => true   
+37: 
+38:   %p 
+39:     = f.submit
+
+    app/views/users/_form.html.haml:36:in `_run_haml_app47views47users47_form46html46haml_locals_form_object'
+    app/views/users/_form.html.haml:36:in `collect'
+    app/views/users/_form.html.haml:36:in `_run_haml_app47views47users47_form46html46haml_locals_form_object'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/users/_form.html.haml:1:in `_run_haml_app47views47users47_form46html46haml_locals_form_object'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.25) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/users/edit.html.haml:3:in `_run_haml_app47views47users47edit46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (139.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 17:13:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM "roles" [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (12.5ms)
+Completed in 37ms (View: 18, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2011-03-06 17:13:38) [PUT]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "id"=>"2", "user"=>{"password_confirmation"=>"", "role_id"=>"1", "username"=>"_why", "last_name"=>"The Lucky Stiff", "password"=>"", "email"=>"why@gmail.com", "first_name"=>"_Why"}}
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: username
+Redirected to http://localhost:3000/
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/users/2]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 17:13:38) [GET]
+  [4;35;1mGame Load (0.5ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Completed in 112ms (View: 106, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 17:13:46) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-03-06 17:13:53) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, index, new, and update):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-03-06 17:14:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (6.3ms)
+Completed in 26ms (View: 8, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2011-03-06 17:14:03) [PUT]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"0hraDMRK47wdxoC2N4JOkflHWTzxWqnrzBKaicGkfDA=", "id"=>"2", "user"=>{"password_confirmation"=>"", "role_id"=>"1", "username"=>"_why", "last_name"=>"The Lucky Stiff", "password"=>"", "email"=>"why@gmail.com", "first_name"=>"_Why"}}
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: username
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/users/2]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 17:14:03) [GET]
+  [4;36;1mGame Load (0.5ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-06 17:14:05) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3ce2235ecdb7c96cdd9b7bb30dc1daa4798836aba5c447e7982d5bc4a474db229269fb61c34bd99b66fceab19b5827119a3aa665487b35fd2bac0e3b32f42a41') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-06 17:14:05) [GET]
+  [4;35;1mGame Load (0.5ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 105ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-06 17:14:07) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.collect) on line #36 of app/views/users/_form.html.haml:
+33:   %p
+34:     = f.label :role_id
+35:     %br
+36:     = f.select :role_id, @roles.collect { |r| [r.role_name, r.id] }, :include_blank => true   
+37: 
+38:   %p 
+39:     = f.submit
+
+    app/views/users/_form.html.haml:36:in `_run_haml_app47views47users47_form46html46haml_locals_form_object'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/users/_form.html.haml:1:in `_run_haml_app47views47users47_form46html46haml_locals_form_object'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.25) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
