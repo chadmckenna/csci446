@@ -492,3 +492,63 @@ Processing GamesController#index (for 127.0.0.1 at 2011-03-07 10:51:40) [GET]
 Rendering template within layouts/application
 Rendering games/index
 Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-07 10:56:04) [GET]
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-07 10:59:22) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::AdminController#index (for 127.0.0.1 at 2011-03-07 11:00:57) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:01:23) [GET]
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" [0m
+
+ActionView::MissingTemplate (Missing template admin/roles/index.erb in view path app/views:/Library/Ruby/Gems/1.8/gems/declarative_authorization-0.5.2/app/views):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AdminController#index (for 127.0.0.1 at 2011-03-07 11:02:43) [GET]
+Rendering template within layouts/application
+Rendering admin/admin/index
+Completed in 44ms (View: 42, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::AdminController#index (for 127.0.0.1 at 2011-03-07 11:03:25) [GET]
+Rendering template within layouts/admin
+Rendering admin/admin/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
