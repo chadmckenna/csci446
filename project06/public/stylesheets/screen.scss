@@ -1,0 +1,96 @@
+html {
+	background: #39f;
+	font-family: "sans-serif";
+	a {
+		color: #39f;
+		&.hover {
+			color: inherit;
+			text-decoration: none;
+		}
+		&.visited {
+			color: inherit;
+		}
+	}
+}
+
+
+.heading {
+	margin: 0 auto 0 auto;
+	width: 90%;
+	text-align: right;
+	h1 {
+		color: #333;
+		font-weight: bold;
+		font-size: 2.3em;
+		font-style: italic;
+	}
+}
+
+.content {
+	width: 90%;
+	margin: 0 auto 0 auto;
+	padding: 10px 10px 10px 10px;
+	background-color: #fff;
+	border: {	
+		style: solid;
+		width: 1px;
+		color: #333;
+	}
+	
+	.body {
+		margin: 30px 0 0 0;
+	}
+	
+	.notice {
+		padding: 5px;
+		float: left;
+		color: green;
+	}
+	
+	.login {	
+		float: right;
+		a {
+			color: #39f;
+			&.hover {
+				color: #333;
+				text-decoration: none;
+			}
+			&.visited {
+				color: #39f;
+			}
+		}
+		
+		
+	}
+	
+	table.games {
+		border: {
+			width: 1px;
+			style: solid;
+			color: #333;
+		}
+		border-spacing: 0;
+		margin: 0 auto 0 0;
+		padding: 10px;
+		width: 100%;
+		th {
+			text-align: left;
+		}
+		tr {
+			td {
+				padding: 3px;
+			}
+			td.link {
+				text-align: center;
+				width: 35px;
+				background-color: #fff;
+			}
+			&.list-odd {
+			    background-color: #fdf;
+			}
+			&.list-even {
+			    background-color: #fef;
+			}
+		}
+	}
+}

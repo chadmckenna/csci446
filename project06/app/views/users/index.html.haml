@@ -1,0 +1,24 @@
+%title Users Index
+
+%div.body
+  %h1 Users
+	
+  %table
+    %tr
+      %th Username
+      %th First Name
+      %th Last Name
+      %th Email
+      %th Role
+    - for user in @users
+      %tr{:class => cycle('list-odd', 'list-even')}
+        %td= h user.username
+        %td= h user.first_name
+        %td= h user.last_name
+        %td= h user.email
+        %td User Roles Goes Here
+        %td.link= link_to 'Show', user
+        %td.link= link_to 'Edit', edit_user_path(user)
+        %td.link= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete
+
+  %p= link_to "Add New User", new_user_path

@@ -1,0 +1,14 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+%head
+  %title 
+    = controller.action_name.upcase
+  = stylesheet_link_tag 'screen.css'
+
+%div.heading 
+  %h1 Gamez
+
+%div.content
+ 
+  %div.notice
+    = notice
+  = yield

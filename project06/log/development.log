@@ -11334,3 +11334,4 @@ Migrating to AddAttachmentsPhotoToUser (20110307060214)
   [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '1b4b51be50240b485282b62d1ce0846ac489df3bb924ecf5d437b843f8c710b96f64e46bde94873179246949cb1105204fecaf5d437ef510cede62e6250e0a2a') LIMIT 1[0m
   [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'member') LIMIT 1[0m
   [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'administrator') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m

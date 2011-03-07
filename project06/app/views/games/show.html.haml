@@ -1,0 +1,29 @@
+%div.login
+  - if current_user 
+    = link_to "Edit Profile", edit_user_path(:current)
+    |
+    = link_to "Logout", logout_path
+  - else
+    = link_to "Register", new_user_path
+    |
+    = link_to "Login", login_path
+
+%div.body
+  %h1 Game
+  
+  %p
+    %strong Title:
+    =h @game.title
+  %p
+    %strong Rating:
+    =h @game.rating
+  %p
+    %strong User:
+    =h @game.user_id
+  
+  %p
+    = link_to "Edit", edit_game_path(@game)
+    |
+    = link_to "Destroy", @game, :confirm => 'Are you sure?', :method => :delete
+    |
+    = link_to "View All", games_path

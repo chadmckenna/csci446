@@ -1,0 +1,15 @@
+one:
+  username: MyString
+  password: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  role_id: 1
+
+two:
+  username: MyString
+  password: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  role_id: 1

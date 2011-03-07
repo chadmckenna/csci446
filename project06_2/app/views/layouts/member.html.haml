@@ -1,0 +1,17 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+%head
+  %title 
+    = controller.action_name.upcase
+  = stylesheet_link_tag 'screen.css'
+
+%div.heading 
+  %h1 Gamez - Member
+
+%div.content
+  %div.login
+  = link_to "Edit Profile", edit_user_path(:current)
+  or
+  = link_to "Logout", logout_path
+  %div.notice
+    = notice
+  = yield

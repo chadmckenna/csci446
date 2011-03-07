@@ -1,0 +1,9 @@
+<p>
+  <b>Author:</b>
+  <%= image_tag @author.photo.url %>
+  <%=h @author.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', authors_path %>

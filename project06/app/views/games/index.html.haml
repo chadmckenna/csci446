@@ -1,0 +1,29 @@
+%div.login
+  - if current_user 
+    = link_to "Edit Profile", edit_user_path(:current)
+    |
+    = link_to "Logout", logout_path
+  - else
+    = link_to "Register", new_user_path
+    |
+    = link_to "Login", login_path
+
+%div.body
+  %h1 Games
+
+  %table.games
+    %tr
+      %th Title
+      %th Rating
+      %th User
+    - for game in @games
+      %tr{:class => cycle('list-odd', 'list-even')}
+        %td= h game.title
+        %td= h game.rating
+        %td= h game.user_id
+        %td.link= link_to 'Show', game
+        %td.link= link_to 'Edit', edit_game_path(game)
+        %td.link= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete
+
+  %p= will_paginate @games
+  %p= link_to "New Game", new_game_path

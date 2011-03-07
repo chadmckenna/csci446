@@ -1,0 +1,17 @@
+%title Roles Index
+
+%div.body
+  %h1 Roles
+	
+  %table
+    %tr
+      %th Role
+      %th User
+    - for role in @roles
+      %tr{:class => cycle('list-odd', 'list-even')}
+        %td= h role.role_name 
+        %td.link= link_to 'Show', role
+        %td.link= link_to 'Edit', edit_role_path(role)
+        %td.link= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+
+  %p= link_to "Add New Role", new_role_path
