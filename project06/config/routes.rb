@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :permissions
+
+  map.resources :permissions
+
   map.resources :roles
 
   map.login "login", :controller => "user_sessions", :action => "new"
