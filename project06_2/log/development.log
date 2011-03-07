@@ -552,3 +552,269 @@ Processing Admin::AdminController#index (for 127.0.0.1 at 2011-03-07 11:03:25) [
 Rendering template within layouts/admin
 Rendering admin/admin/index
 Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:04:48) [GET]
+  [4;35;1mRole Load (0.6ms)[0m   [0mSELECT * FROM "roles" [0m
+
+ActionView::MissingTemplate (Missing template admin/roles/index.erb in view path app/views:/Library/Ruby/Gems/1.8/gems/declarative_authorization-0.5.2/app/views):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:06:01) [GET]
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/admin
+Rendering admin/roles/index
+
+ActionView::TemplateError (undefined method `user_id' for #<Role:0x1032bf940>) on line #10 of app/views/admin/roles/index.html.haml:
+7:   - for role in @roles
+8:     %tr
+9:       %td= h role.name
+10:       %td= h role.user_id
+11:       %td= link_to 'Show', role
+12:       %td= link_to 'Edit', edit_role_path(role)
+13:       %td= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete
+
+    app/views/admin/roles/index.html.haml:10:in `_run_haml_app47views47admin47roles47index46html46haml'
+    app/views/admin/roles/index.html.haml:7:in `each'
+    app/views/admin/roles/index.html.haml:7:in `_run_haml_app47views47admin47roles47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:07:38) [GET]
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/admin
+Rendering admin/roles/index
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/admin/roles]
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:08:46) [GET]
+  [4;36;1mRole Load (0.6ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/admin
+Rendering admin/roles/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/roles]
+
+
+Processing ApplicationController#destroy (for 127.0.0.1 at 2011-03-07 11:08:53) [DELETE]
+  Parameters: {"authenticity_token"=>"1j3ERi5AypdowfL8CTzR2ulrhyHPPCr8r0vOj7zN6Xk=", "id"=>"6"}
+
+NameError (uninitialized constant RolesController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:09:06) [GET]
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/admin
+Rendering admin/roles/index
+Completed in 88ms (View: 6, DB: 1) | 200 OK [http://localhost/admin/roles]
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:09:28) [GET]
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/admin
+Rendering admin/roles/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/admin/roles]
+
+
+Processing Admin::RolesController#destroy (for 127.0.0.1 at 2011-03-07 11:09:32) [DELETE]
+  Parameters: {"authenticity_token"=>"1j3ERi5AypdowfL8CTzR2ulrhyHPPCr8r0vOj7zN6Xk=", "id"=>"6"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 6) [0m
+  [4;36;1mRole Destroy (0.3ms)[0m   [0;1mDELETE FROM "roles" WHERE "id" = 6[0m
+Redirected to http://localhost:3000/admin/roles
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/admin/roles/6]
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:09:32) [GET]
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/admin
+Rendering admin/roles/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/admin/roles]
+
+
+Processing Admin::RolesController#show (for 127.0.0.1 at 2011-03-07 11:09:41) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/roles/show
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x102fdb878>) on line #1 of app/views/admin/roles/show.html.haml:
+1: - title "Role"
+2: 
+3: %p
+4:   %strong Name:
+
+    app/views/admin/roles/show.html.haml:1:in `_run_haml_app47views47admin47roles47show46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::RolesController#show (for 127.0.0.1 at 2011-03-07 11:10:22) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/roles/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/roles/5]
+
+
+Processing Admin::RolesController#new (for 127.0.0.1 at 2011-03-07 11:10:30) [GET]
+Rendering template within layouts/admin
+Rendering admin/roles/new
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x102f07258>) on line #1 of app/views/admin/roles/new.html.haml:
+1: - title "New Role"
+2: 
+3: = render :partial => 'form'
+4: 
+
+    app/views/admin/roles/new.html.haml:1:in `_run_haml_app47views47admin47roles47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::RolesController#new (for 127.0.0.1 at 2011-03-07 11:10:54) [GET]
+Rendering template within layouts/admin
+Rendering admin/roles/new
+
+ActionView::TemplateError (undefined method `user_id' for #<Role id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/admin/roles/_form.html.haml:
+7:   %p
+8:     = f.label :user_id
+9:     %br
+10:     = f.text_field :user_id
+11:   %p
+12:     = f.submit
+
+    app/views/admin/roles/_form.html.haml:10:in `_run_haml_app47views47admin47roles47_form46html46haml_locals_form_object'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/admin/roles/_form.html.haml:1:in `_run_haml_app47views47admin47roles47_form46html46haml_locals_form_object'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.25) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/admin/roles/new.html.haml:1:in `_run_haml_app47views47admin47roles47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::RolesController#new (for 127.0.0.1 at 2011-03-07 11:11:06) [GET]
+Rendering template within layouts/admin
+Rendering admin/roles/new
+Rendered admin/roles/_form (6.3ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/admin/roles/new]
+
+
+Processing Admin::RolesController#new (for 127.0.0.1 at 2011-03-07 11:11:13) [GET]
+Rendering template within layouts/admin
+Rendering admin/roles/new
+Rendered admin/roles/_form (4.6ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/roles/new]
+
+
+Processing Admin::RolesController#new (for 127.0.0.1 at 2011-03-07 11:11:52) [GET]
+Rendering template within layouts/admin
+Rendering admin/roles/new
+Rendered admin/roles/_form (6.1ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/admin/roles/new]
+
+
+Processing Admin::RolesController#index (for 127.0.0.1 at 2011-03-07 11:19:18) [GET]
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/admin
+Rendering admin/roles/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/admin/roles]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-07 11:19:23) [GET]
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/admin
+Rendering admin/games/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]

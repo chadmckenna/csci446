@@ -1,0 +1,16 @@
+%p
+  %strong Title:
+  =h @game.title
+%p
+  %strong Rating:
+  =h @game.rating
+%p
+  %strong User:
+  =h @game.user_id
+
+%p
+  = link_to "Edit", edit_admin_game_path(@game)
+  |
+  = link_to "Destroy", admin_game_path(@game), :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", admin_games_path
