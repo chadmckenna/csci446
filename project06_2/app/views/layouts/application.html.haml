@@ -8,7 +8,10 @@
   %h1 Gamez
 
 %div.content
- 
+  %div.login
+    = link_to "Register", new_user_path
+    or
+    = link_to "Login", login_path
   %div.notice
     = notice
   = yield

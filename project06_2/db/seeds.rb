@@ -1,3 +1,6 @@
+User.delete_all
+Role.delete_all
+
 admin = Role.create(
   :name => "admin"
 )
@@ -13,7 +16,7 @@ User.create(
   :first_name => "admin",
   :last_name => "istrator",
   :email => "admin@gamez.com",
-  :role => admin
+  :role_id => admin.id
 )
 
 User.create(
@@ -23,5 +26,5 @@ User.create(
   :first_name => "mem",
   :last_name => "ber",
   :email => "member@gamez.com",
-  :role => member
+  :role_id => member.id
 )

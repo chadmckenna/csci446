@@ -16,6 +16,11 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :roles
     admin.resources :games
   end
+  
+  map.namespace :members do |member|
+    member.root :controller => "games"
+    member.resources :games
+  end
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

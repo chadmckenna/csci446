@@ -4,13 +4,15 @@ authorization do
   end
   
   role :member do
-    #has_permission_on :games, :to => :read
-    has_permission_on :users, :to => :manage
+    has_permission_on :members_games, :to => :manage
+    has_permission_on :members_users, :to => :manage
   end
   
   role :admin do
-    has_permission_on :users, :to => :manage
-    has_permission_on :roles, :to => :manage
+    has_permission_on :admin_admin, :to => :manage
+    has_permission_on :admin_games, :to => :manage
+    has_permission_on :admin_users, :to => :manage
+    has_permission_on :admin_roles, :to => :manage
     #has_permission_on :games, :to => :manage
   end
 end

@@ -9,9 +9,9 @@
 
 %div.content
   %div.login
-  = link_to "Edit Profile", edit_user_path(:current)
-  or
-  = link_to "Logout", logout_path
+    = link_to "Edit Profile", edit_user_path(:current)
+    or
+    = link_to "Logout", logout_path
   %div.notice
     = notice
   = yield
