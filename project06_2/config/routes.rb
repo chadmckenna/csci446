@@ -15,11 +15,13 @@ ActionController::Routing::Routes.draw do |map|
     admin.root :controller => "games"
     admin.resources :roles
     admin.resources :games
+    admin.resources :users
   end
   
   map.namespace :members do |member|
     member.root :controller => "games"
     member.resources :games
+    member.resources :users
   end
   # The priority is based upon order of creation: first created -> highest priority.
 

@@ -8,6 +8,19 @@
   %h1 Gamez - Admin
 
 %div.content
+  %div.login
+    = link_to "Edit Profile", edit_admin_user_path(:current)
+    or
+    = link_to "Logout", logout_path
+  %br
   %div.notice
     = notice
+  %div
+    = link_to "Users", admin_users_path
+    |
+    = link_to "Games", admin_games_path
+    |
+    = link_to "Roles", admin_roles_path
+    |
+    = link_to "Admin", admin_root_url
   = yield

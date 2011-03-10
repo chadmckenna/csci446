@@ -3,10 +3,10 @@
   =h @game.title
 %p
   %strong Rating:
-  =h @game.rating
+  =h @ratings.at(@game.rating)
 %p
   %strong User:
-  =h @game.user_id
+  =h @game.user
 
 %p
   = link_to "Edit", edit_admin_game_path(@game)

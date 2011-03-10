@@ -9,9 +9,12 @@
 
 %div.content
   %div.login
-    = link_to "Edit Profile", edit_user_path(:current)
+    = link_to "Edit Profile", edit_members_user_path(:current)
     or
     = link_to "Logout", logout_path
+    |
+    = link_to "My Games", members_root_url
+  %br
   %div.notice
     = notice
   = yield
