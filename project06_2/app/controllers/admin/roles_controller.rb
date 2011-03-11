@@ -1,6 +1,6 @@
 class Admin::RolesController < Admin::AdminController
   def index
-    @roles = Role.all
+    @roles = Role.paginate :per_page => 10, :page => params[:page]
   end
 
   def show

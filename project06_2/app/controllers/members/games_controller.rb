@@ -2,7 +2,7 @@ class Members::GamesController < Members::MembersController
   def index
     ratings
     @user = current_user
-    @games = Game.find_all_by_user_id(@user.id)
+    @games = Game.find_all_by_user_id(@user.id).paginate :per_page => 10, :page => params[:page]
   end
 
   def show

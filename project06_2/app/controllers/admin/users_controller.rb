@@ -1,6 +1,6 @@
 class Admin::UsersController < Admin::AdminController
   def index
-    @users = User.all
+    @users = User.paginate :per_page => 10, :page => params[:page]
   end
 
   def show

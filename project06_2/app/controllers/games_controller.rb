@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
   def index
     ratings
-    @games = Game.all
+    @games = Game.paginate :per_page => 10, :page => params[:page]
   end
 
   def show
